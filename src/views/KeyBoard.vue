@@ -40,4 +40,6 @@ export default {
 
 </style>
 
-// Quelle : https://kbdfans.com/products/tofu60-2-0 //
+<!--
+ Quelle : https://kbdfans.com/products/tofu60-2-0
+ Test -->
