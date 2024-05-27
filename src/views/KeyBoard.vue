@@ -32,7 +32,21 @@ export default {
         }
       ]
     }
-  }
+  },
+  mounted () {
+    const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/keyboards'
+    const requestOptions = {
+      method: 'GET',
+      redirect: 'follow'
+    }
+
+    fetch(endpoint, requestOptions)
+      .then(response => response.json())
+      .then(result => result.forEach(keyboard => {
+        this.keyboards.push(keyboard)
+      }))
+      .catch(error => console.log('error', error))
+
 }
 </script>
 
