@@ -32,8 +32,7 @@ export default {
         }
       ]
     }
-  },
-  mounted () {
+    /* mounted () {
     const endpoint = process.env.VUE_APP_BACKEND_BASE_URL + '/api/v1/keyboards'
     const requestOptions = {
       method: 'GET',
@@ -46,7 +45,8 @@ export default {
         this.keyboards.push(keyboard)
       }))
       .catch(error => console.log('error', error))
-
+*/
+  }
 }
 </script>
 
